@@ -1,28 +1,39 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+import { 
+  Php, 
+  FileJson as Javascript, 
+  FileCode as Html, 
+  FileType as Css, 
+  Github, 
+  Database,
+  Layers as Laravel, 
+  Radio as Websocket, 
+  Search as Elasticsearch
+} from 'lucide-react';
 
 const Skills: React.FC = () => {
   const technologies = {
     languages: [
-      { name: 'PHP', icon: '<?php' },
-      { name: 'JavaScript', icon: 'JS' },
-      { name: 'HTML5', icon: '<>' },
-      { name: 'CSS3', icon: '#' }
+      { name: 'PHP', icon: <Php className="w-5 h-5" /> },
+      { name: 'JavaScript', icon: <Javascript className="w-5 h-5" /> },
+      { name: 'HTML5', icon: <Html className="w-5 h-5" /> },
+      { name: 'CSS3', icon: <Css className="w-5 h-5" /> }
     ],
     frameworks: [
-      { name: 'Laravel', icon: '🔺' },
-      { name: 'React JS', icon: '⚛️' },
+      { name: 'Laravel', icon: <Laravel className="w-5 h-5" /> },
+      { name: 'React JS', icon: <Github className="w-5 h-5" /> },
       { name: 'Bootstrap', icon: 'B' },
       { name: 'Tailwind CSS', icon: 'TW' }
     ],
     databases: [
-      { name: 'MySQL', icon: '🗄️' }
+      { name: 'MySQL', icon: <Database className="w-5 h-5" /> }
     ],
     tools: [
-      { name: 'Websocket', icon: '🔌' },
-      { name: 'Elasticsearch', icon: '🔍' },
-      { name: 'Git', icon: '📊' },
+      { name: 'Websocket', icon: <Websocket className="w-5 h-5" /> },
+      { name: 'Elasticsearch', icon: <Elasticsearch className="w-5 h-5" /> },
+      { name: 'Git', icon: <Github className="w-5 h-5" /> },
       { name: 'RESTful APIs', icon: '🔄' }
     ]
   };
@@ -51,7 +62,7 @@ const Skills: React.FC = () => {
 
 interface Skill {
   name: string;
-  icon: string;
+  icon: React.ReactNode;
 }
 
 const SkillCategory: React.FC<{ title: string; skills: Skill[] }> = ({ title, skills }) => (
