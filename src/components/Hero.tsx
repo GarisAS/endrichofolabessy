@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import CVButton from '@/components/CVButton';
 
 const Hero: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const Hero: React.FC = () => {
               <Button asChild variant="outline" className="border-backend-600 text-backend-600 hover:text-backend-700 hover:border-backend-700">
                 <a href="#contact">Get In Touch</a>
               </Button>
+              <CVButton />
             </div>
           </div>
           <div className="md:col-span-5 hidden md:block animate-fade-in">
