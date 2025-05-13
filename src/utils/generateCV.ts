@@ -54,6 +54,5 @@ export const generatePDF = async () => {
 
 export const downloadCV = () => {
   // Show loading state
-  // This could be enhanced with a toast notification
   generatePDF();
 };
