@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
           ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md py-2"
           : "bg-transparent py-4"
       )}
-    >
+    > 
       <div className="container mx-auto flex justify-between items-center px-4 md:px-8">
         <a
           href="#hero"
