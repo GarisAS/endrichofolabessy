@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Github, Mail } from "lucide-react";
 
@@ -19,6 +19,8 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const 
+
   return (
     <header
       className={cn(
@@ -27,7 +29,7 @@ const Navbar: React.FC = () => {
           ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md py-2"
           : "bg-transparent py-4"
       )}
-    > 
+    >
       <div className="container mx-auto flex justify-between items-center px-4 md:px-8">
         <a
           href="#hero"
