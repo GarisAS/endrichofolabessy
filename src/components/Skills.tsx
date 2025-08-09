@@ -1,41 +1,39 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { 
-  Code, 
-  FileJson, 
-  FileCode, 
-  FileType, 
-  Github, 
+import {
+  Code2,
+  FileJson,
+  FileCode2,
+  FileType2,
+  Braces,
   Database,
-  Layers, 
-  Radio, 
-  Search
+  Layers,
+  TerminalSquare,
+  GitBranch,
+  Cloud,
 } from 'lucide-react';
 
 const Skills: React.FC = () => {
   const technologies = {
     languages: [
-      { name: 'PHP', icon: <Code className="w-5 h-5" /> },
+      { name: 'PHP', icon: <Braces className="w-5 h-5" /> },
       { name: 'JavaScript', icon: <FileJson className="w-5 h-5" /> },
-      { name: 'HTML5', icon: <FileCode className="w-5 h-5" /> },
-      { name: 'CSS3', icon: <FileType className="w-5 h-5" /> }
+      { name: 'HTML5', icon: <FileCode2 className="w-5 h-5" /> },
+      { name: 'CSS3', icon: <FileType2 className="w-5 h-5" /> },
     ],
     frameworks: [
       { name: 'Laravel', icon: <Layers className="w-5 h-5" /> },
-      { name: 'React JS', icon: <Github className="w-5 h-5" /> },
-      { name: 'Bootstrap', icon: 'B' },
-      { name: 'Tailwind CSS', icon: 'TW' }
+      { name: 'React JS', icon: <Code2 className="w-5 h-5" /> },
+      { name: 'Bootstrap', icon: <TerminalSquare className="w-5 h-5" /> },
+      { name: 'Tailwind CSS', icon: <Cloud className="w-5 h-5" /> },
     ],
     databases: [
-      { name: 'MySQL', icon: <Database className="w-5 h-5" /> }
+      { name: 'MySQL', icon: <Database className="w-5 h-5" /> },
     ],
     tools: [
-      { name: 'Websocket', icon: <Radio className="w-5 h-5" /> },
-      { name: 'Elasticsearch', icon: <Search className="w-5 h-5" /> },
-      { name: 'Git', icon: <Github className="w-5 h-5" /> },
-      { name: 'RESTful APIs', icon: '🔄' }
-    ]
+      { name: 'Git', icon: <GitBranch className="w-5 h-5" /> },
+      { name: 'RESTful APIs', icon: <Cloud className="w-5 h-5" /> },
+    ],
   };
 
   return (
@@ -45,7 +43,7 @@ const Skills: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Skills & Expertise</h2>
           <div className="h-1 w-20 bg-backend-500 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            My technical toolkit encompasses a range of technologies for building powerful backend solutions
+            A comprehensive toolkit for building secure, scalable, and high-performance backend systems.
           </p>
         </div>
 
@@ -53,7 +51,7 @@ const Skills: React.FC = () => {
           <SkillCategory title="Languages" skills={technologies.languages} />
           <SkillCategory title="Frameworks & Libraries" skills={technologies.frameworks} />
           <SkillCategory title="Databases" skills={technologies.databases} />
-          <SkillCategory title="Tools & Services" skills={technologies.tools} />
+          <SkillCategory title="Tools" skills={technologies.tools} />
         </div>
       </div>
     </section>
