@@ -19,8 +19,6 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const 
-
   return (
     <header
       className={cn(
